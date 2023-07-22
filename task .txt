@@ -1,0 +1,99 @@
+1:Write a blog on Difference between HTTP1.1 vs HTTP2
+
+The Evolution of Web Communication: Exploring the Differences between HTTP 1.1 and HTTP 2
+
+Introduction:
+Two major versions of the Hypertext Transfer Protocol (HTTP) that have shaped the way we interact with websites are HTTP 1.1 and HTTP 2. 
+These protocols dictate how information is exchanged between web servers and clients.
+
+Performance Enhancements:
+HTTP 1.1 was first standardized in 1999 and revolutionized the World Wide Web by enabling faster and more efficient communication between web browsers and servers.
+ However, as websites became more complex and resource-heavy, HTTP 1.1 started to show limitations. One of the primary issues was that it allowed only one request to be processed at a time, 
+ resulting in a phenomenon known as "head-of-line blocking."
+HTTP 2, introduced in 2015, was designed to address these performance bottlenecks. 
+It introduced a multiplexing feature that allows multiple requests and responses to be sent simultaneously over a single TCP connection. 
+This parallelism greatly improves the efficiency of data transmission, enabling faster page loading and reducing latency.
+
+Binary Protocol:
+While HTTP 1.1 communicated using plain text, HTTP 2 employs a binary protocol. 
+By using a binary format, HTTP 2 reduces the size of header data, making it more compact and efficient. 
+This results in less overhead and faster parsing of information by both servers and clients.
+
+Server Push:
+Another notable feature introduced in HTTP 2 is server push.  
+Web browsers had to make individual requests for each resource required to render a web page, including images, CSS files, and JavaScript scripts.
+ With server push, the server can proactively send resources to the client without waiting for explicit requests. This reduces the number of round trips required to retrieve all necessary assets, further enhancing page loading speed.
+
+Header Compression:
+HTTP 2 utilizes header compression techniques to reduce the size of header fields. 
+In HTTP 1.1, headers were sent with each request, even if they were redundant or unchanged.
+ HTTP 2 uses a technique called HPACK, which employs static and dynamic table-based compression to eliminate redundant header data.
+  This optimization significantly reduces bandwidth consumption and improves overall performance.
+
+Stream Prioritization:
+HTTP 2 introduces the concept of stream prioritization. It allows clients to assign priorities to different resources, indicating their relative importance. 
+This feature enables the server to allocate resources accordingly and deliver critical assets first, optimizing the user experience.
+
+Conclusion:
+HTTP 1.1 revolutionized the web and served as the foundation for many years. 
+With the introduction of HTTP 2, web communication took a leap forward, offering significant improvements in speed, efficiency, and user experience.
+
+
+
+
+
+
+2:Write a blog about objects and its internal representation in Javascript
+
+Objects and Their Internal Representation in JavaScript
+
+Introduction:
+JavaScript, as an object-oriented programming language, utilizes objects as a fundamental concept for data storage and manipulation. 
+Objects are essential in JavaScript, offering a versatile way to represent and organize data.
+
+Understanding Objects in JavaScript:
+ Objects in JavaScript are instances of predefined classes or user-defined structures, enabling us to create custom data types and organize data effectively.
+
+Internal Representation of Objects:
+Internally, JavaScript objects are represented as key-value pairs, where each key is a string (or Symbol) and each value can be of any data type, including other objects. 
+These key-value pairs are known as object properties. 
+Properties can hold primitive values such as numbers, strings, or booleans, as well as other objects or functions.
+
+Conclusion:
+Objects play a pivotal role in JavaScript, providing a flexible and powerful way to organize and manipulate data. 
+They are represented internally as key-value pairs, allowing for efficient data storage.
+
+
+3.Read about IP address, port, HTTP methods, MAC address
+
+IP Address:
+An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network. 
+It serves two main purposes: identifying the host or network interface and providing the location of the host in the network. 
+There are two versions of IP addresses in use today: IPv4 (32-bit address) and IPv6 (128-bit address). 
+IPv4 addresses are written in the format of four sets of numbers separated by periods (e.g., 192.168.0.1), 
+while IPv6 addresses are represented as eight groups of hexadecimal values separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+Port:
+A port is a virtual data endpoint within an operating system used for communication between applications. 
+Ports are identified by numbers, and they allow multiple applications to operate on a single device by using different port numbers. 
+Ports are categorized into two ranges: well-known ports (0-1023), which are assigned to specific protocols like HTTP (80) or HTTPS (443), and registered/dynamic ports (1024-65535), 
+which can be used by any application for communication.
+
+HTTP Methods:
+HTTP (Hypertext Transfer Protocol) is the underlying protocol used for communication between a client (typically a web browser) and a server on the World Wide Web.
+HTTP defines a set of request methods that indicate the desired action to be performed on a resource.
+Some commonly used HTTP methods include:
+
+    GET: Requests data from a specified resource.
+    POST: Submits data to be processed to a specified resource.
+    PUT: Updates a specified resource with new data.
+    DELETE: Deletes a specified resource.
+    HEAD: Retrieves the headers of a specified resource without the response body.
+    OPTIONS: Requests the communication options available for a specified resource.
+
+
+MAC Address:
+A MAC (Media Access Control) address is a unique identifier assigned to a network interface controller (NIC) by the manufacturer. 
+It operates at the data link layer of the network protocol stack and is primarily used for local network communication. 
+MAC addresses are typically 48 bits in length and written in hexadecimal format, usually separated by colons or hyphens (e.g., 00:1A:2B:3C:4D:5E). 
+MAC addresses are used to ensure that data is delivered to the correct device within a local network.
